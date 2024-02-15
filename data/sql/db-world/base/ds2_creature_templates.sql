@@ -1,0 +1,1 @@
+UPDATE `creature_template` SET `ScriptName` = 'npc_ipp_ds2' WHERE `entry` IN ('15183','15182','15194','15270','15306')

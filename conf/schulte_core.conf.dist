@@ -5,13 +5,13 @@
 [worldserver]
 
 ########################################
-# My module configuration
+# Schulte Core configuration
 ########################################
 #
-#    MyModule.Enable
-#        Description: Enable my module and print "Hello World" message at server start
+#    SchulteCore.Enable
+#        Description: Enable Schulte Core
 #        Default:     0 - Disabled
 #                     1 - Enabled
 #
 
-MyModule.Enable = 1
+SchulteCore.Enable = 1

@@ -1,0 +1,3 @@
+UPDATE `mod_auctionhousebot` SET `minitems` = '25000', `maxitems` = '30000', `percentwhitetradegoods` = '40', `percentgreentradegoods` = '20', `percentwhiteitems` = '7', `percentgreenitems` = '12' WHERE `auctionhouse` = '2';
+UPDATE `mod_auctionhousebot` SET `minitems` = '25000', `maxitems` = '30000', `percentwhitetradegoods` = '40', `percentgreentradegoods` = '20', `percentwhiteitems` = '7', `percentgreenitems` = '12' WHERE `auctionhouse` = '6';
+UPDATE `mod_auctionhousebot` SET `minitems` = '25000', `maxitems` = '30000', `percentwhitetradegoods` = '40', `percentgreentradegoods` = '20', `percentwhiteitems` = '7', `percentgreenitems` = '12' WHERE `auctionhouse` = '7';
