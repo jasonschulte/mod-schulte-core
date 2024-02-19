@@ -59,6 +59,7 @@ REPLACE INTO `spell_cooldown_overrides` VALUES('56005','0','0','0','0','Glacial 
 
 -- Inscription
 REPLACE INTO `spell_cooldown_overrides` VALUES('61177','0','0','0','0','Northrend Inscription Research');
+REPLACE INTO `spell_cooldown_overrides` VALUES('61288','0','0','0','0','Minor Inscription Research');
 
 -- Enchanting
 REPLACE INTO `spell_cooldown_overrides` VALUES('28028','0','0','0','0','Void Sphere');
