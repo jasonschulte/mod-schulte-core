@@ -16,10 +16,7 @@
 class schulte_core : public WorldScript
 {
 public:
-  schulte_core() : WorldScript("schulte_core")
-  {
-
-  }
+  schulte_core() : WorldScript("schulte_core") { }
   void OnStartup()
   {
     uint8 localeIndex = 0;
