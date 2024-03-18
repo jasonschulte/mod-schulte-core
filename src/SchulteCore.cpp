@@ -34,32 +34,35 @@ public:
       uint32 id = itr->second.Entry;
 
       if (id == BOT_ENTRY_MIRROR_IMAGE_BM)
-          continue;
+        continue;
       // //Blademaster disabled
       // if (botclass == BOT_CLASS_BM)
       //     continue;
 
       NpcBotExtras const* _botExtras = BotDataMgr::SelectNpcBotExtras(id);
       if (!_botExtras || _botExtras->bclass >= BOT_CLASS_EX_START || _botExtras->bclass == BOT_CLASS_NONE)
-          continue;
+        continue;
 
       if (BotDataMgr::SelectNpcBotData(id))
-          continue;
+        continue;
 
       uint8 race = _botExtras->race;
 
       if (CreatureLocale const* creatureLocale = sObjectMgr->GetCreatureLocale(id))
       {
-          if (creatureLocale->Name.size() > localeIndex && !creatureLocale->Name[localeIndex].empty())
-          {
-              botlist.emplace_back(id, std::string(creatureLocale->Name[localeIndex]), race);
-              continue;
-          }
+        if (creatureLocale->Name.size() > localeIndex && !creatureLocale->Name[localeIndex].empty())
+        {
+          botlist.emplace_back(id, std::string(creatureLocale->Name[localeIndex]), race);
+          continue;
+        }
       }
 
       std::string name = itr->second.Name;
       if (name.empty())
-          continue;
+        continue;
+
+      if (id >= 70800)
+        continue;
 
       botlist.emplace_back(id, std::move(name), race);
     }
